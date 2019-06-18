@@ -50,7 +50,9 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: FlatButton(
             onPressed: () async {
-              Toast.showLoading('toast测试');
+              Toast.showToast(
+                  '超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串');
+              //Toast.showLoading('toast测试');
             },
             child: Text('$_platformVersion'),
           ),

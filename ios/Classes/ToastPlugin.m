@@ -65,9 +65,9 @@
     
     // 快速显示一个提示信息
     _toastHUD = [MBProgressHUD showHUDAddedTo:[self window] animated:YES];
-    _toastHUD.label.text = text;
+    _toastHUD.detailsLabel.text = text;
     // 设置图片
-    _toastHUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"MBProgressHUD.bundle/%@", icon]]];
+    _toastHUD.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:[NSString stringWithFormat:@"MBProgressHUD.bundle/%@", icon]]];
     // 再设置模式
     _toastHUD.mode = MBProgressHUDModeCustomView;
     _toastHUD.bezelView.color = [UIColor colorWithWhite:0.f alpha:.8f];
